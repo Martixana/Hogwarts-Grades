@@ -2,12 +2,12 @@
 //Create variables for student message
 var greeting = "Hi"
 var name = #student_Name
-var message = ". Your final grade is an "+ #final_Grade
+var message = ". Your final grade is an "+ #final_Grade"
 var explanation = "Your grade breaks down in the following way: "
 
 
 //create variables to hold final grade and grade breakdown
-var total_grade = 
+var total_grade = grade_calulation()
 var total_grammar = 
 var total_bibliography = 
 var total_clarity = 
