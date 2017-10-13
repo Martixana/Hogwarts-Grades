@@ -1,21 +1,13 @@
 
-//Create variables for student message
-var greeting = "Hi"
-var name = #student_Name
-var message = ". Your final grade is an "+ #final_Grade"
-var explanation = "Your grade breaks down in the following way: "
-
-
-//create variables to hold final grade and grade breakdown
-var total_grade = grade_calulation()
-var total_grammar = 
-var total_bibliography = 
-var total_clarity = 
-var total_originality = 
+//create variables to hold values from html tags with same id
+var elGrammar = document.getElementById ('elGrammar').value
+var elBibliography = document.getElementById ('elBiblio').value
+var elClarity = document.getElementById ('elClarity').value
+var elOriginality = document.getElementById ('elOriginality').value
 
  //Calculating grades
-function grade_calulation (a,b,c,d){
-	var num_grade = #elGrammar + #elBiblio +#elClarity + #elOriginality
+function grade_calulation (a,b,c,d,e){
+	var num_grade = elGrammar + elBibliography + elClarity + elOriginality
 
 	if (num_grade >=90){
 		document.write ('A')
@@ -23,16 +15,29 @@ function grade_calulation (a,b,c,d){
 		document.write ('B')
 	} else if (num_grade >=60){
 		document.write ('C')
-	} else if (num_grade >= 50){
+	} else if (num_grade>= 50){
 		document.write ('D')
-	} else (num_grade <50){
+	} else if(num_grade<50){
 		document.write ('F')
+	} else if (num_grade >100 || num_grade<0){
+		document.write ('Please recalculate your answers above')
 	}
+    
+    return grade_calulation()
 
-	grade_calulation()
 }
 
-var elName = document.getElementById ('student_Name').value
+
+ var letter_grade = grade_calulation()
+
+//Create variables for student message
+var greeting = "Hi"
+var name = document.getElementsByClassName('studentName')
+name.textContent = document.getElementById('student_Name')+ " 's"
+var message = ". Your final grade is an " + grade_calculation()
+var explanation = "Your grade breaks down in the following way: "
+
+/*var elName = document.getElementById ('student_Name').value
 
 var elTwo = docuement.getElementById ('elGrammar').value
 elTwo.textContent = elName
@@ -57,8 +62,8 @@ var elOriginality = document.getElementById ('elOriginality').value
 var elSix = document.getElementById ('elSix')
 elSix.textContent = elOne
 
-var final_Grade = document.getElementById (final_grade)
-final_Grade.textContent = grade_calulation()
+var letter_Grade = document.getElementById (letter_Grade)
+letter_Grade.textContent = grade_calulation()*/
 
 
 

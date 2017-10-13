@@ -7,7 +7,7 @@
     <meta name="author" content="Maru Pereira">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Hogwarts: Top Secret Grades</title>
+    <title>Hogwarts:Top Secret Grades</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../programs/bootstrap-4.0.0-beta/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -62,8 +62,8 @@
     <div class="container">
 
       <div class="starter-template">
-        <h1>Welcome to the Gryffindor Grading Homepage</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+        <h1>Welcome to the Secret House Gryffindor Grading Page</h1>
+        <p class="lead">Use this document as a way to quickly mark your pupil's potions punctutations and more!</p>
       </div>
 
     </div><!-- /.container -->
@@ -73,12 +73,12 @@
 
     <!-- GRADING INSTRUCTION SECTION -->
     <section class-"explanation">
-      <p>Grades for <em>X YEAR Gryffindor</em> students are broken down into the following categories:</p>
+      <p>Marks for Second-Year <em>Gryffindor</em> student final essays on Spells & Charms are broken down into the following categories:</p>
       <ul>
-        <li><b>Grammar</b></li>
+        <li><b>Grammar & Punctuation </b></li>
         <li><b>Bibliography</b></li>
         <li><b>Clarity of Ideas</b></li>
-        <li><b>Originality</b></li>
+        <li><b>Originality of Potion Use Theory</b></li>
       </ul>
       <p>Each of these categories are worth <b>25</b> percentage points</p>
     </section>
@@ -87,24 +87,24 @@
 
     <! -- STUDENTS -->
     <section class="student">
-      <p>Which pupil shall we be grading, now? <input id="student_Name" type="text" name=""> <br>
+      <p>Which pupil shall we be grading, now? <input id="student_Name" type="text" name="name"> <br>
        <input type="submit" value="Submit">
        <input type="reset"><p>
 
       <div>
-        <h6 id="elGrammer">What was <span>X_STUDENT's</span> score for grammar on a scale from 1-25?</h6> <!-- drop down for numbers? -->
+        <h6 id="elGrammer">What was <span class= "studentName">X_STUDENT's</span> score for grammar on a scale from 1-25?</h6> <!-- drop down for numbers? -->
         
-        <h6 id="elBiblio">What was <span>X_STUDENT's</span> score for bibliography on a scale from 1-25?</h6>
+        <h6 id="elBiblio">What was <span class= "studentName">X_STUDENT's</span> score for bibliography on a scale from 1-25?</h6>
 
-        <h6 id="elClarity">What was <span>X_STUDENT's</span> score for clarity of ideas from 1-25?</h6>
+        <h6 id="elClarity">What was <span class="studentName">X_STUDENT's</span> score for clarity of ideas from 1-25?</h6>
 
-        <h6 id="elOriginality">What was <span>X_STUDENT's</span> score for originality from 1-25?</h6>  
+        <h6 id="elOriginality">What was <span class="studentName">X_STUDENT's</span> score for originality from 1-25?</h6>  
       </div>
 
       <div>
-        <h5 id="elFinal">Based on the scores above, <span>XSTUDENT</span> will recieve the following final grade: <span id="final_Grade"</h5>
+        <h5 id="elFinal">Based on the scores above, <span class="studentName">XSTUDENT</span> will recieve the following final grade: <span id="final_Grade">XGrade</span></h5>
         <br>
-        <p class="student_msg"><b><span>XSTUDENT</span> will recieve the following message:<b> "Hi <span>XSTUDENT</span>, <span>congratulations</span> you recieved an <span>A</span> on your final paper. Please email or visit during office hours if you have any questions.</p>
+        <p class="student_msg"><b><span>XSTUDENT</span> will recieve the following message:<b> "Hi <span class="studentName">XSTUDENT</span>, <span id="salutation">congratulations</span> you recieved an <span id="letter_Grade">A</span> on your final paper. Please email or visit during office hours if you have any questions.</p>
       </div>
     </section>
 
