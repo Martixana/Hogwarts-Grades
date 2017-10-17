@@ -62,8 +62,8 @@
     <div class="container">
 
       <div class="starter-template">
-        <h1>Welcome to the Secret House Gryffindor Grading Page</h1>
-        <p class="lead">Use this document as a way to quickly mark your pupil's potions punctutations and more!</p>
+        <h1>Welcome to House Gryffindor Secret Grading Homepage</h1>
+        <p class="lead">Use this document as a way to quickly evaluate your pupil's potion, punctutations and more!</p>
       </div>
 
     </div><!-- /.container -->
@@ -76,7 +76,7 @@
       <p>Marks for Second-Year <em>Gryffindor</em> student final essays on Spells & Charms are broken down into the following categories:</p>
       <ul>
         <li><b>Grammar & Punctuation </b></li>
-        <li><b>Bibliography</b></li>
+        <li><b>Bibliography of Ancient Wizardly Sources</b></li>
         <li><b>Clarity of Ideas</b></li>
         <li><b>Originality of Potion Use Theory</b></li>
       </ul>
@@ -87,9 +87,14 @@
 
     <! -- STUDENTS -->
     <section class="student">
-      <p>Which pupil shall we be grading, now? <input id="student_Name" type="text" name="name"> <br>
-       <input type="submit" value="Submit">
-       <input type="reset"><p>
+      <!-- <p>Which pupil shall we be grading, now? <input id="student_Name" type="text" name="name">
+      <input type="submit" value="Submit" onclick="getStudentName()" id="btnOne">
+     <!--  <button onclick="getStudentName()" id="btnOne">send</button> </p> -->
+
+    <form id="formOne">
+        Name: <input type="text" id="student_Name" name="Sname">
+        <input type="button" onclick="getStudent()" value="Submit">
+    </form><br>
 
       <div>
         <h6 id="elGrammer">What was <span class= "studentName">X_STUDENT's</span> score for grammar on a scale from 1-25?</h6> <!-- drop down for numbers? -->
